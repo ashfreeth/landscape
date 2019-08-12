@@ -6,12 +6,10 @@
   </head>
   <body>
     <h1>CNCF Landscape</h1>
-    <ul>
-      {% for category in site.data.landscape %}
-      <li>
+    <table>
+      {% tablerow category in site.data.landscape %}
         {{ category.name }}
-      </li>
-      {% endfor %}
-    </ul>
+      {% endtablerow %}
+    </table>
   </body>
 </html>
