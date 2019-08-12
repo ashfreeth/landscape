@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>CNCF Landscape</h1>
+    <ul>
+      {% for category in site.data.landscape %}
+      <li>
+        {{ category.name }}
+      </li>
+  </body>
+</html>
